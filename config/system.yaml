@@ -1,0 +1,22 @@
+Sensor:
+  hostname: 10.0.81.96
+  port: 22
+  username: root
+  password: prs@2018
+
+kafka:
+  kafka_server_ip: 10.0.81.93
+  kafka_port: 9091
+  kafka_cert_path: E:\项目\PRS-NTA\job\tophant\PRS\certs\kafka
+  kafka_consumer_timeout: 300  # 消费数据超时时间，单位秒
+  topic: tophant.etl.http
+  group_id: test_id
+  kafka_http_msg: msg/kafka.txt
+#  kafka_http_msg:
+#    - msg/kafka_http.txt
+#    - msg/kafka_tcp.txt
+#    - msg/kafka_udp.txt
+#    - msg/kafka_dns.txt
+
+pcap:
+  config_path: pcap_conf/http.conf
