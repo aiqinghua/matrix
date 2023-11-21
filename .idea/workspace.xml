@@ -46,7 +46,7 @@
         <entry file="file://$PROJECT_DIR$/data_comparison.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="330">
-              <caret line="20" column="26" lean-forward="true" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="26" />
+              <caret line="20" column="26" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="26" />
               <folding>
                 <element signature="e#43#54#0" expanded="true" />
               </folding>
@@ -57,7 +57,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/atest_data.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="371">
+            <state relative-caret-position="6">
               <caret line="55" column="18" selection-start-line="55" selection-start-column="18" selection-end-line="55" selection-end-column="18" />
             </state>
           </provider>
@@ -67,7 +67,7 @@
         <entry file="file://$PROJECT_DIR$/msg/kafka.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="30">
-              <caret line="1" column="34" lean-forward="true" selection-start-line="1" selection-end-line="2" />
+              <caret line="1" column="34" selection-start-line="1" selection-end-line="2" />
             </state>
           </provider>
         </entry>
@@ -85,7 +85,7 @@
         <entry file="file://$PROJECT_DIR$/config/system.yaml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="71">
-              <caret line="9" column="60" lean-forward="true" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="60" />
+              <caret line="9" column="60" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="60" />
             </state>
           </provider>
         </entry>
@@ -136,11 +136,11 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-1928" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-1244" />
+    <option name="y" value="398" />
+    <option name="width" value="574" />
+    <option name="height" value="309" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -325,7 +325,7 @@
     <option name="totallyTimeSpent" value="35069000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1928" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-1928" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19029851" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -384,14 +384,14 @@
     <entry file="file://$PROJECT_DIR$/msg/kafka.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
-          <caret line="1" column="34" lean-forward="true" selection-start-line="1" selection-end-line="2" />
+          <caret line="1" column="34" selection-start-line="1" selection-end-line="2" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/system.yaml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="71">
-          <caret line="9" column="60" lean-forward="true" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="60" />
+          <caret line="9" column="60" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="60" />
         </state>
       </provider>
     </entry>
@@ -433,7 +433,7 @@
     <entry file="file://$PROJECT_DIR$/data_comparison.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
-          <caret line="20" column="26" lean-forward="true" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="26" />
+          <caret line="20" column="26" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="26" />
           <folding>
             <element signature="e#43#54#0" expanded="true" />
           </folding>
@@ -442,7 +442,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/atest_data.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
+        <state relative-caret-position="6">
           <caret line="55" column="18" selection-start-line="55" selection-start-column="18" selection-end-line="55" selection-end-column="18" />
         </state>
       </provider>
