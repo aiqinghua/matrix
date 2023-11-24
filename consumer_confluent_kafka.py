@@ -12,8 +12,11 @@ kafka_server_port = kafka_conf["kafka"]["kafka_port"]
 kafka_consumer_timeout = kafka_conf["kafka"]["kafka_consumer_timeout"]
 kafka_topic = kafka_conf["kafka"]["topic"]
 kafka_group_id = kafka_conf["kafka"]["group_id"] + str(time.time()*1000)
-kafka_output_http_msg = kafka_conf["kafka"]["kafka_http_msg"][0]
+kafka_output_msg = kafka_conf["kafka"]["kafka_msg"]
 ssl_dir = kafka_conf["kafka"]["kafka_cert_path"]
+
+print(kafka_topic[0])
+print(kafka_output_msg)
 
 conf = {
     'bootstrap.servers': f'{kafka_server_ip}:{kafka_server_port}',
@@ -34,12 +37,15 @@ def clear_file_content(filename):
 
 
 def consumer_loop(consumer,topics):
+    topic_to_file = {topic:file for topic,file in zip(topics, kafka_output_msg)}
+
     # 设置output文件是否需要被清空标识
-    clear_file = False
+    clear_file = True
     if clear_file:
         # 第一次运行时清空
-        clear_file_content(kafka_output_http_msg)
-        clear_file = False
+        for file in kafka_output_msg:
+            clear_file_content(file)
+            clear_file = False
 
     try:
         consumer.subscribe(topics)
@@ -58,10 +64,10 @@ def consumer_loop(consumer,topics):
             else:
                 decode_msg = msg.value().decode('latin-1')
                 print(decode_msg)
-                with open(kafka_output_http_msg, "a", encoding="utf-8") as file:
+                with open(topic_to_file[msg.topic()], "a", encoding="utf-8") as file:
                     file.write(f"{decode_msg}\n")
     finally:
         consumer.close()
 
 
-consumer_loop(consumer,[f'{kafka_topic}'])
+consumer_loop(consumer,kafka_topic)

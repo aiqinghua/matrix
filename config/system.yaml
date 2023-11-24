@@ -9,14 +9,19 @@ kafka:
   kafka_port: 9091
   kafka_cert_path: E:\项目\PRS-NTA\job\tophant\PRS\certs\kafka
   kafka_consumer_timeout: 300  # 消费数据超时时间，单位秒
-  topic: tophant.etl.http
+  topic:
+    - tophant.etl.http
+    - tophant.etl.dns
+    - tophant.etl.tcp
+    - tophant.etl.udp
+
   group_id: test_id
-  kafka_http_msg: msg/kafka.txt
-#  kafka_http_msg:
-#    - msg/kafka_http.txt
-#    - msg/kafka_tcp.txt
-#    - msg/kafka_udp.txt
-#    - msg/kafka_dns.txt
+#  kafka_http_msg: msg/kafka.txt
+  kafka_msg:
+    - msg/kafka_http.txt
+    - msg/kafka_tcp.txt
+    - msg/kafka_udp.txt
+    - msg/kafka_dns.txt
 
 pcap:
   config_path: pcap_conf/http.conf
