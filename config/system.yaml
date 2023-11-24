@@ -19,9 +19,18 @@ kafka:
 #  kafka_http_msg: msg/kafka.txt
   kafka_msg:
     - msg/kafka_http.txt
+    - msg/kafka_dns.txt
     - msg/kafka_tcp.txt
     - msg/kafka_udp.txt
-    - msg/kafka_dns.txt
+    - msg/kafka_ftp.txt
+    - msg/kafka_mail.txt
 
 pcap:
-  config_path: pcap_conf/http.conf
+  config_path:
+    - pcap_conf/http.conf
+    - pcap_conf/dns.conf
+    - pcap_conf/tcp.conf
+    - pcap_conf/udp.conf
+    - pcap_conf/ftp.conf
+    - pcap_conf/smtp.conf
+    - pcap_conf/pop3.conf
