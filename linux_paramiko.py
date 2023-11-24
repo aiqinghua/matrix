@@ -1,9 +1,11 @@
 import paramiko
 import os
+from read_config import read_config
 import shutil
 
 
 def upload_directory(local_path,remote_path,ssh):
+    # 上传pcap包
     sftp = ssh.open_sftp()
     try:
         sftp.chdir(remote_path)
@@ -19,32 +21,28 @@ def upload_directory(local_path,remote_path,ssh):
     sftp.close()
 
 
-hostname = "10.0.81.96"
-port = 22
-username = "root"
-password = "prs@2018"
+def Execute_Command(command):
+    stdin, stdout, stderr = ssh.exec_command(command)
+    output = stdout.read().decode("utf-8")
+    errors = stderr.read().decode("utf-8")
+    print(f"Command Output:{output}")
+    print(f"Command Errors:{errors}")
+    ssh.close()
+
+
+sysconf = read_config()
+hostname = sysconf["Sensor"]["hostname"]
+port = sysconf["Sensor"]["port"]
+username = sysconf["Sensor"]["username"]
+password = sysconf["Sensor"]["password"]
 
 ssh = paramiko.SSHClient()
 ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
-ssh.connect(hostname,port,username,password)
+ssh.connect(hostname, port, username, password)
 
-
-local_path = r"./pcap"
-remote_path = "/home/aiqinghua/pcap/"
-
-upload_directory(local_path,remote_path,ssh)
-
-
-# command = f"ls -l {remote_path}"
-command = f"export PATH=$PATH:/usr/local/wireshark/bin/;prsdata -d {remote_path} -K -T 100 --daemon;ps -ef|grep prsdata"
-print(f"Executing command: {command}")
-stdin, stdout, stderr = ssh.exec_command(command)
-output = stdout.read().decode("utf-8")
-errors = stderr.read().decode("utf-8")
-print("Command Output:")
-print(output)
-
-print("Command Errors:")
-print(errors)
-
-ssh.close()
+if __name__ == '__main__':
+    local_path = r"./pcap"
+    remote_path = "/home/aiqinghua/pcap/"
+    upload_directory(local_path, remote_path, ssh)
+    command = f"export PATH=$PATH:/usr/local/wireshark/bin/;prsdata -d {remote_path} -K -T 1 --daemon;ps -ef|grep prsdata"
+    Execute_Command(command)
