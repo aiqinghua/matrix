@@ -59,29 +59,3 @@ def comparison_json_field():
         print(f"匹配失败的字段为：{failed_fields}")
 
 comparison_json_field()
-
-# def comparison_json_field():
-#     field_to_compare = ["sip","dip","sport","dport","protocol","method"]
-#     data1 = {field: [] for field in field_to_compare}
-#     data2 = {field: [] for field in field_to_compare}
-#     with open(raw_data_file,"r") as f1,open(kafka_msg_file,"r") as f2:
-#         for line in f1:
-#             obj = json.loads(line)
-#             for field in field_to_compare:
-#                 if field in obj:
-#                     data1[field].append(obj[field])
-#
-#         for line in f2:
-#             obj = json.loads(line)
-#             for field in field_to_compare:
-#                 if field in obj:
-#                     data2[field].append(obj[field])
-#
-#         print(f"data1的值为：{data1},\t\ndata2的值为：{data2}")
-#         diff = {}
-#         # diff = DeepDiff(data1,data2)
-#         for field in field_to_compare:
-#             diff[field] = DeepDiff(data1[field],data2[field])
-#         print(diff)
-#
-# comparison_json_field()

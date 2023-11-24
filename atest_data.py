@@ -32,28 +32,27 @@ def Entire_data():
 def field_data(field):
     # 字段对比
     fields = field
-    field_success = []
-    field_fail = []
+    result = []
     temp_success,temp_fail = Entire_data()
     for line in temp_fail:
+        field_success = []
+        field_fail = []
         for field in fields:
-            if data1.get(field) == line.get(field):
+            if data1.get(field) == line.get(field) and line.get(field) is not None:
                 field_success.append(field)
             else:
                 field_fail.append(field)
-        break
-    return field_success, field_fail
-    # results = []
-    #
-    # for line in data2:
-    #     matching_fields = []
-    #     for key, value in line.items():
-    #         if key in data1 and data1[key] == value:
-    #             matching_fields.append(key)
-    #
-    #     results.append(matching_fields)
-
-    return results
+        result.append({
+            "field_success": field_success,
+            "field_fail": field_fail,
+            "line": line,
+            "data1": data1
+        })
+    for res in result:
+        print(f"匹配成功的字段：{res['field_success']} \t 匹配失败的字段：{res['field_fail']}"
+              f"\n匹配的数据：{res['line']}\n原始数据：{res['data1']}")
+        print("")
+    return result
 
 
 def Processing_comparative_data():
@@ -75,11 +74,14 @@ def get_result():
     get_res = Processing_comparative_data()
     dirty_data = []
     for tmp in get_res:
-        print(tmp)
+        # print(tmp)
+        # print(type(len(tmp)))
+        i = 1
+        print(f"匹配成功的字段为：{tmp[len(tmp)- (i+3)]} \n匹配失败的字段为：{tmp[len(tmp)- (i+2)]}\n匹配的数据为：{tmp[len(tmp)- (i+1)]}"
+              f"\n匹配的原始数据为：{tmp[len(tmp)-i]}\n")
 
 field = ["sip", "dip", "protocol", "method"]
-success, fail = field_data(field)
-# print(f"匹配成功的字段为：{success[0]} \n匹配失败的字段为：{fail[0]}")
-res = Processing_comparative_data()
-print(res)
+# success, fail = field_data(field)
+
+field_data(field)
 # get_result()
