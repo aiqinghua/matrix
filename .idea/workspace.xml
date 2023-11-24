@@ -2,25 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="acfa6801-0327-4bf0-b16f-cd46b50e67a6" name="Default Changelist" comment="修改字段对比逻辑">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/atest_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/comparative_data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/system.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/system.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/consumer_confluent_kafka.py" beforeDir="false" afterPath="$PROJECT_DIR$/consumer_confluent_kafka.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data_comparison.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_comparison.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pcap/arp.conf.pcap" beforeDir="false" afterPath="$PROJECT_DIR$/pcap/arp.conf.pcap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pcap/dhcp.conf.pcap" beforeDir="false" afterPath="$PROJECT_DIR$/pcap/dhcp.conf.pcap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pcap/dns.conf.pcap" beforeDir="false" afterPath="$PROJECT_DIR$/pcap/dns.conf.pcap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pcap/ftp.conf.pcap" beforeDir="false" afterPath="$PROJECT_DIR$/pcap/ftp.conf.pcap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pcap/http.conf.pcap" beforeDir="false" afterPath="$PROJECT_DIR$/pcap/http.conf.pcap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pcap/icmp.conf.pcap" beforeDir="false" afterPath="$PROJECT_DIR$/pcap/icmp.conf.pcap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pcap/imap.conf.pcap" beforeDir="false" afterPath="$PROJECT_DIR$/pcap/imap.conf.pcap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pcap/pop3.conf.pcap" beforeDir="false" afterPath="$PROJECT_DIR$/pcap/pop3.conf.pcap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pcap/rarp.conf.pcap" beforeDir="false" afterPath="$PROJECT_DIR$/pcap/rarp.conf.pcap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pcap/smtp.conf.pcap" beforeDir="false" afterPath="$PROJECT_DIR$/pcap/smtp.conf.pcap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pcap/syslog.conf.pcap" beforeDir="false" afterPath="$PROJECT_DIR$/pcap/syslog.conf.pcap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pcap/tcp.conf.pcap" beforeDir="false" afterPath="$PROJECT_DIR$/pcap/tcp.conf.pcap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pcap/telnet.conf.pcap" beforeDir="false" afterPath="$PROJECT_DIR$/pcap/telnet.conf.pcap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pcap/udp.conf.pcap" beforeDir="false" afterPath="$PROJECT_DIR$/pcap/udp.conf.pcap" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,7 +12,7 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/integration_test$pcap_generator.coverage" NAME="pcap_generator Coverage Results" MODIFIED="1699260377251" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Matrix$data_comparison.coverage" NAME="data_comparison Coverage Results" MODIFIED="1700824332341" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Matrix$data_comparison.coverage" NAME="data_comparison Coverage Results" MODIFIED="1700825700960" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Matrix$linux_paramiko.coverage" NAME="linux_paramiko Coverage Results" MODIFIED="1700805971720" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Matrix$consumer_confluent_kafka.coverage" NAME="consumer_confluent_kafka Coverage Results" MODIFIED="1700824313749" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Matrix$pytest_in_test_data_py.coverage" NAME="pytest in atest_data.py Coverage Results" MODIFIED="1700103659043" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -44,8 +26,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/consumer_confluent_kafka.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-696">
-              <caret line="31" column="33" selection-start-line="31" selection-start-column="33" selection-end-line="31" selection-end-column="33" />
+            <state relative-caret-position="870">
+              <caret line="29" column="8" selection-start-line="29" selection-end-line="29" selection-end-column="8" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -53,11 +35,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/data_comparison.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="990">
-              <caret line="48" column="20" selection-start-line="48" selection-start-column="20" selection-end-line="48" selection-end-column="20" />
+            <state relative-caret-position="-876">
+              <caret line="37" column="14" lean-forward="true" selection-start-line="37" selection-start-column="14" selection-end-line="37" selection-end-column="14" />
               <folding>
                 <element signature="e#43#54#0" expanded="true" />
               </folding>
@@ -66,10 +48,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/msg/kafka_http.txt">
+        <entry file="file://$PROJECT_DIR$/config/system.yaml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+            <state relative-caret-position="234">
+              <caret line="24" column="16" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -83,16 +65,16 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pcap_conf/tcp.conf">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pcap_conf/http.conf">
+        <entry file="file://$PROJECT_DIR$/msg/kafka_http.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="1315" selection-start-column="1315" selection-end-column="1315" />
+            <state relative-caret-position="60">
+              <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
             </state>
           </provider>
         </entry>
@@ -148,10 +130,10 @@
         <option value="$PROJECT_DIR$/read_config.py" />
         <option value="$PROJECT_DIR$/RANDOM.md" />
         <option value="$PROJECT_DIR$/main.py" />
-        <option value="$PROJECT_DIR$/data_comparison.py" />
         <option value="$PROJECT_DIR$/consumer_confluent_kafka.py" />
         <option value="$PROJECT_DIR$/config/system.yaml" />
         <option value="$PROJECT_DIR$/pcap_conf/http.conf" />
+        <option value="$PROJECT_DIR$/data_comparison.py" />
       </list>
     </option>
   </component>
@@ -215,7 +197,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.main">
+  <component name="RunManager" selected="Python.data_comparison">
     <configuration name="atest_data" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="integration_test" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -328,8 +310,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.main" />
         <item itemvalue="Python.data_comparison" />
+        <item itemvalue="Python.main" />
         <item itemvalue="Python.consumer_confluent_kafka" />
         <item itemvalue="Python.atest_data" />
         <item itemvalue="Python.linux_paramiko" />
@@ -347,7 +329,7 @@
       <option name="presentableId" value="Default" />
       <updated>1699259780667</updated>
       <workItem from="1699259782059" duration="1795000" />
-      <workItem from="1700037941374" duration="55383000" />
+      <workItem from="1700037941374" duration="58387000" />
     </task>
     <task id="LOCAL-00001" summary="修改字段对比逻辑">
       <created>1700791138594</created>
@@ -392,7 +374,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57178000" />
+    <option name="totallyTimeSpent" value="60182000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1928" y="-8" width="1936" height="1056" extended-state="6" />
@@ -557,60 +539,10 @@
     <entry file="file://$PROJECT_DIR$/msg/kafka_ftp.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/system.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="24" column="16" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pcap_conf/http.conf">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="1315" selection-start-column="1315" selection-end-column="1315" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/msg/kafka_mail.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/consumer_confluent_kafka.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-696">
-          <caret line="31" column="33" selection-start-line="31" selection-start-column="33" selection-end-line="31" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data_comparison.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="990">
-          <caret line="48" column="20" selection-start-line="48" selection-start-column="20" selection-end-line="48" selection-end-column="20" />
-          <folding>
-            <element signature="e#43#54#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/msg/kafka_tcp.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/msg/kafka_udp.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/msg/kafka_dns.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/msg/kafka_http.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
         </state>
       </provider>
     </entry>
@@ -623,6 +555,56 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pcap_conf/tcp.conf">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/msg/kafka_udp.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/msg/kafka_mail.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/msg/kafka_http.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/msg/kafka_dns.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/msg/kafka_tcp.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/system.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="24" column="16" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consumer_confluent_kafka.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="870">
+          <caret line="29" column="8" selection-start-line="29" selection-end-line="29" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_comparison.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-876">
+          <caret line="37" column="14" lean-forward="true" selection-start-line="37" selection-start-column="14" selection-end-line="37" selection-end-column="14" />
+          <folding>
+            <element signature="e#43#54#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
   </component>
 </project>

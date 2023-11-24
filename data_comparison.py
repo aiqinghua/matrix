@@ -45,13 +45,28 @@ def comparison_json_field():
             #     if field in obj:
             #         data1[field] = obj[field]
 
+    http_data = []
+    dns_data = []
+    tcp_data = []
+    udp_data = []
     for file_name in kafka_msg_file:
         with open(file_name, "r", encoding="utf-8") as f2:
             for line in f2:
-                print(line)
+                # print(line)
+                if file_name == kafka_msg_file[0]:
+                    http_data.append(line)
+                elif file_name == kafka_msg_file[1]:
+                    dns_data.append(line)
+                elif file_name == kafka_msg_file[2]:
+                    tcp_data.append(line)
+                elif file_name == kafka_msg_file[3]:
+                    udp_data.append(line)
+                # if file_name ==
                 # obj = json.loads(line)
                 # temp_data = {field: obj.get(field) for field in field_to_compare}
                 # data2.append(temp_data)
+
+    print(f"http的数据为：{http_data}\ndns的数据为：{dns_data}\ntcp的数据为：{tcp_data}\nudp的数据为：{udp_data}")
 
     # matching_data, failed_fields = find_matching_data(data1, data2)
     # if matching_data != "":
