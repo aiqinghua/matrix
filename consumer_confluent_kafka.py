@@ -15,8 +15,6 @@ kafka_group_id = kafka_conf["kafka"]["group_id"] + str(time.time()*1000)
 kafka_output_msg = kafka_conf["kafka"]["kafka_msg"]
 ssl_dir = kafka_conf["kafka"]["kafka_cert_path"]
 
-print(kafka_topic[0])
-print(kafka_output_msg)
 
 conf = {
     'bootstrap.servers': f'{kafka_server_ip}:{kafka_server_port}',
