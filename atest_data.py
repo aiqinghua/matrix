@@ -31,27 +31,27 @@ def Entire_data():
 
 def field_data(field):
     # 字段对比
-    # fields = field
-    # field_success = []
-    # field_fail = []
-    # temp_success,temp_fail = Entire_data()
-    # for line in temp_fail:
-    #     for field in fields:
-    #         if data1.get(field) == line.get(field):
-    #             field_success.append(field)
-    #         else:
-    #             field_fail.append(field)
-    #     break
-    # return field_success, field_fail
-    results = []
-
-    for line in data2:
-        matching_fields = []
-        for key, value in line.items():
-            if key in data1 and data1[key] == value:
-                matching_fields.append(key)
-
-        results.append(matching_fields)
+    fields = field
+    field_success = []
+    field_fail = []
+    temp_success,temp_fail = Entire_data()
+    for line in temp_fail:
+        for field in fields:
+            if data1.get(field) == line.get(field):
+                field_success.append(field)
+            else:
+                field_fail.append(field)
+        break
+    return field_success, field_fail
+    # results = []
+    #
+    # for line in data2:
+    #     matching_fields = []
+    #     for key, value in line.items():
+    #         if key in data1 and data1[key] == value:
+    #             matching_fields.append(key)
+    #
+    #     results.append(matching_fields)
 
     return results
 
