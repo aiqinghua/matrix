@@ -3,6 +3,7 @@ Sensor:
   port: 22
   username: root
   password: prs@2018
+  pcap_path: /home/aiqinghua/pcap/
 
 kafka:
   kafka_server_ip: 10.0.81.93
@@ -14,6 +15,10 @@ kafka:
     - tophant.etl.dns
     - tophant.etl.tcp
     - tophant.etl.udp
+    - tophant.etl.icmp
+#    - tophant.etl.file
+    - tophant.etl.mail
+    - tophant.etl.protocol
 
   group_id: test_id
 #  kafka_http_msg: msg/kafka.txt
@@ -22,8 +27,10 @@ kafka:
     - msg/kafka_dns.txt
     - msg/kafka_tcp.txt
     - msg/kafka_udp.txt
-    - msg/kafka_ftp.txt
+    - msg/kafka_icmp.txt
+#    - msg/kafka_file.txt
     - msg/kafka_mail.txt
+    - msg/kafka_protocol.txt
 
 pcap:
   config_path:
@@ -31,6 +38,14 @@ pcap:
     - pcap_conf/dns.conf
     - pcap_conf/tcp.conf
     - pcap_conf/udp.conf
-    - pcap_conf/ftp.conf
+    - pcap_conf/icmp.conf
+#    - pcap_conf/file.conf
     - pcap_conf/smtp.conf
     - pcap_conf/pop3.conf
+    - pcap_conf/imap.conf
+    - pcap_conf/arp.conf
+    - pcap_conf/dhcp.conf
+    - pcap_conf/ftp.conf
+    - pcap_conf/rarp.conf
+    - pcap_conf/syslog.conf
+    - pcap_conf/telnet.conf

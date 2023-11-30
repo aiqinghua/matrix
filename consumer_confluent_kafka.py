@@ -2,7 +2,6 @@ import sys
 from confluent_kafka.cimpl import KafkaError, KafkaException
 from read_config import read_config
 from confluent_kafka import Consumer
-import datetime
 import time
 
 
@@ -62,6 +61,10 @@ def consumer_loop(consumer,topics):
             else:
                 decode_msg = msg.value().decode('latin-1')
                 print(decode_msg)
+                data_msg = ''
+                # if data_msg in decode_msg:    # 过滤数据内容
+                # if topic == kafka_topic["tophant.etl.mail"]:
+                print(topic_to_file[msg.topic()])
                 with open(topic_to_file[msg.topic()], "a", encoding="utf-8") as file:
                     file.write(f"{decode_msg}\n")
     finally:

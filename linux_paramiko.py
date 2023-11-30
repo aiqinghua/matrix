@@ -1,7 +1,6 @@
 import paramiko
 import os
 from read_config import read_config
-import shutil
 
 
 def upload_directory(local_path,remote_path,ssh):
@@ -35,6 +34,7 @@ hostname = sysconf["Sensor"]["hostname"]
 port = sysconf["Sensor"]["port"]
 username = sysconf["Sensor"]["username"]
 password = sysconf["Sensor"]["password"]
+pcap_path = sysconf["Sensor"]["pcap_path"]
 
 ssh = paramiko.SSHClient()
 ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
@@ -42,7 +42,7 @@ ssh.connect(hostname, port, username, password)
 
 if __name__ == '__main__':
     local_path = r"./pcap"
-    remote_path = "/home/aiqinghua/pcap/"
+    remote_path = pcap_path
     upload_directory(local_path, remote_path, ssh)
     command = f"export PATH=$PATH:/usr/local/wireshark/bin/;prsdata -d {remote_path} -K -T 1 --daemon;ps -ef|grep prsdata"
     Execute_Command(command)
