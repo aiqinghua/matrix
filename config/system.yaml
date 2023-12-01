@@ -35,6 +35,8 @@ kafka:
 logs:
   data_comparison_logs_path:
     - logs/data_comparison.log
+  Comparison_results:
+    - logs/Comparison_results.log
 
 pcap:
   config_path:
