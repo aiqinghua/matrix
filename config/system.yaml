@@ -32,6 +32,10 @@ kafka:
     - msg/kafka_mail.txt
     - msg/kafka_protocol.txt
 
+logs:
+  data_comparison_logs_path:
+    - logs/data_comparison.log
+
 pcap:
   config_path:
     - pcap_conf/http.conf
@@ -49,3 +53,10 @@ pcap:
     - pcap_conf/rarp.conf
     - pcap_conf/syslog.conf
     - pcap_conf/telnet.conf
+    - pcap_conf/ssl.conf
+    - pcap_conf/mysql.conf
+    - pcap_conf/socks.conf
+    - pcap_conf/snmp.conf
+    - pcap_conf/llmnr.conf
+    - pcap_conf/ldap.conf
+    - pcap_conf/rdp.conf
