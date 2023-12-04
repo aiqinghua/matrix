@@ -16,6 +16,8 @@ def consumer_kafka():
     os.system("python consumer_confluent_kafka.py")
 
 # 本地config文件与kafka数据对比
+def contrast():
+    os.system("python data_comparison.py")
 
 if __name__ == '__main__':
     pcap_generator()
@@ -23,3 +25,5 @@ if __name__ == '__main__':
     upload.start()
     cons = Thread(target=consumer_kafka())
     cons.start()
+    print("aaa")
+    contrast()

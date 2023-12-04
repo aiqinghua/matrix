@@ -64,7 +64,7 @@ def consumer_loop(consumer,topics):
                 data_msg = ''
                 # if data_msg in decode_msg:    # 过滤数据内容
                 # if topic == kafka_topic["tophant.etl.mail"]:
-                print(topic_to_file[msg.topic()])
+                # print(topic_to_file[msg.topic()])
                 with open(topic_to_file[msg.topic()], "a", encoding="utf-8") as file:
                     file.write(f"{decode_msg}\n")
     finally:

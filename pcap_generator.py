@@ -7,6 +7,7 @@ import dpkt
 import ipaddress
 import binascii
 from scapy.all import DNS, DNSQR, DNSRR, IP, send, sniff, sr1, UDP, Ether, ICMP, ARP, DHCP, BOOTP
+from read_config import read_config
 
 
 
@@ -29,8 +30,9 @@ PROTOCOL_UDP = "udp"
 PROTOCOL_TCP = "tcp"
 PROTOCOL_ICMP = "icmp"
 
-CONF_DIR = r"pcap_conf"
-PCAPS_DIR = r"./pcap"
+pcap_conf = read_config()
+CONF_DIR = pcap_conf["pcap"]["CONF_DIR"]
+PCAPS_DIR = pcap_conf["pcap"]["PCAPS_DIR"]
 
 def pcap_generate_pcap_write_single(pcap_name, pkt):
     pcap_path = PCAPS_DIR + "/" + pcap_name

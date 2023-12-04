@@ -54,41 +54,41 @@ def process_protocol_data(data1_keys, data1_value, data2_value, fields_to_compar
             "default_fields": fields_to_compare
         },
         "smtp.conf": {
-            "fields": ["schema_type", "protocol", "mail_from", "rcpt_to", "raw_mail"],
+            "fields": ["protocol", "mail_from", "rcpt_to", "raw_mail"],
             "default_fields": fields_to_compare
         },
         "pop3.conf": {
-            "fields": ["schema_type", "protocol", "mail_from", "rcpt_to", "raw_mail"],
+            "fields": ["protocol", "mail_from", "rcpt_to", "raw_mail"],
             "default_fields": fields_to_compare
         },
         "imap.conf": {
-            "fields": ["schema_type", "protocol", "mail_from", "rcpt_to", "raw_mail"],
+            "fields": ["protocol", "mail_from", "rcpt_to", "raw_mail"],
             "default_fields": fields_to_compare
         },
         "arp.conf": {
-            "fields": ["schema_type", "spa", "sha", "tpa", "tha", "opcode", "hardware_type", "protocol_type", "dst_mac"],
+            "fields": ["spa", "sha", "tpa", "tha", "opcode", "hardware_type", "protocol_type", "dst_mac"],
             "default_fields": fields_to_compare
         },
         "dhcp.conf": {
-            "fields": ["schema_type", "lease_time", "trans_id", "assigned_dns", "assigned_ip", "assigned_netmask",
+            "fields": ["lease_time", "trans_id", "assigned_dns", "assigned_ip", "assigned_netmask",
                       "assigned_router", "mac"],
             "default_fields": fields_to_compare
         },
         "ftp.conf": {
-            "fields": ["schema_type", "user", "command", "arg", "code", "msg"],
+            "fields": ["user", "command", "arg", "code", "msg"],
             "default_fields": fields_to_compare
         },
         "rarp.conf": {
-            "fields": ["schema_type", "src_mac", "dst_mac", "opcode", "hardware_type", "protocol_type", "spa", "sha",
+            "fields": ["src_mac", "dst_mac", "opcode", "hardware_type", "protocol_type", "spa", "sha",
                       "tpa", "tha"],
             "default_fields": fields_to_compare
         },
         "syslog.conf": {
-            "fields": ["schema_type", "facility", "level", "message"],
+            "fields": ["facility", "level", "message"],
             "default_fields": fields_to_compare
         },
         "telnet.conf": {
-            "fields": ["schema_type", "content"],
+            "fields": ["content"],
             "default_fields": fields_to_compare
         },
         "ssl.conf": {
@@ -97,30 +97,29 @@ def process_protocol_data(data1_keys, data1_value, data2_value, fields_to_compar
             "default_fields": fields_to_compare
         },
         "mysql.conf": {
-            "fields": ["schema_type","db_type", "username", "command", "arg", "success"],
+            "fields": ["db_type", "username", "command", "arg", "success"],
             "default_fields": fields_to_compare
         },
         "socks.conf": {
-            "fields": ["schema_type", "command", "status", "addr","port"],
+            "fields": ["command", "status", "addr","port"],
             "default_fields": fields_to_compare
         },
         "snmp.conf": {
-            "fields": ["schema_type", "duration", "get_request_count","get_next_request_count","response_count",
+            "fields": ["duration", "get_request_count","get_next_request_count","response_count",
                       "set_request_count","trap_count", "get_bulk_request_count", "inform_request_count", "sys_desc", "sys_uptime",
                       "sys_contact", "sys_name", "sys_memory_size", "sys_if_number"],
             "default_fields": fields_to_compare
         },
         "llmnr.conf": {
-            "fields": ["schema_type", "query", "qtype", "qtype_name", "rcode_name", "answers", "answer_queries", "rejected", "rcode",
-                       "answer_types"],
+            "fields": ["query", "qtype", "qtype_name", "rcode_name", "answers", "answer_queries", "rejected", "rcode", "answer_types"],
             "default_fields": fields_to_compare
         },
         "ldap.conf": {
-            "fields": ["schema_type", "op", "req_dn", "res_code", "matched_dn", "res_error"],
+            "fields": ["op", "req_dn", "res_code", "matched_dn", "res_error"],
             "default_fields": fields_to_compare
         },
         "rdp.conf": {
-            "fields": ["schema_type", "cookie", "cotp_connect_request", "cotp_connect_confirm", "rdp_negotiation_request",
+            "fields": ["cookie", "cotp_connect_request", "cotp_connect_confirm", "rdp_negotiation_request",
                      "rdp_negotiation_failure", "rdp_negotiation_response"],
             "default_fields": fields_to_compare
         }

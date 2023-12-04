@@ -60,8 +60,8 @@ def field_data(data1, data2, field,data1_key):
             "keys": data1_key
         })
     for res in result:
-        # print(f"\033[33m当前匹配协议为：{res['keys']}\033[0m\t\033[34m成功的字段：{res['field_success']}\033[0m\t "
-        #       f"\033[31m失败的字段：{res['field_fail']}\033[0m")
+        print(f"\033[33m当前匹配协议为：{res['keys']}\033[0m\t\033[34m成功的字段：{res['field_success']}\033[0m\t "
+              f"\033[31m失败的字段：{res['field_fail']}\033[0m")
 
         with open(comparative_data_log[0], "a", encoding="utf-8") as log_file:
             log_file.write(f"匹配成功的字段：{res['field_success']}\t 匹配失败的字段：{res['field_fail']}"

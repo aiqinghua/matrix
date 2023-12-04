@@ -8,8 +8,8 @@ Sensor:
 kafka:
   kafka_server_ip: 10.0.81.93
   kafka_port: 9091
-  kafka_cert_path: E:\项目\PRS-NTA\job\tophant\PRS\certs\kafka
-  kafka_consumer_timeout: 300  # 消费数据超时时间，单位秒
+  kafka_cert_path: certs/kafka
+  kafka_consumer_timeout: 180  # 消费数据超时时间，单位秒
   topic:
     - tophant.etl.http
     - tophant.etl.dns
@@ -62,3 +62,5 @@ pcap:
     - pcap_conf/llmnr.conf
     - pcap_conf/ldap.conf
     - pcap_conf/rdp.conf
+  CONF_DIR: pcap_conf
+  PCAPS_DIR: pcap
